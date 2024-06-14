@@ -6,6 +6,9 @@ int main(){
     DESCUENTO=0.20;
 	cout << "Ingrese el total de su compra: ";
 	cin >> totalCompra;
+	if (totalCompra<0){
+		cout << "El total de compra es invalido"<<endl;
+	}else{
     if (totalCompra > LIMITE_DESCUENTO) {
         montoAPagar = totalCompra * (1 - DESCUENTO);
     } else {
@@ -13,4 +16,5 @@ int main(){
     }
     cout << "El monto a pagar es: "<<montoAPagar<<endl;
     return 0;
+}
 }
