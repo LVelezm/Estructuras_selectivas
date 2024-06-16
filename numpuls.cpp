@@ -8,6 +8,9 @@ int main(){
     cin>> sexo;
     cout<<"Ingrese la edad:"<<endl;
     cin>> edad;
+    if(edad<0){
+    	cout<<"Edad invalida"<<endl;
+	}else{
     if(sexo='F'){
         num_pulsaciones=(220-edad)/10;
     }else if(sexo='M'){
@@ -17,4 +20,5 @@ int main(){
     }
     cout<<"Numero de pulsaciones por cada 10 segundos:"<<num_pulsaciones<<endl;
     return 0;
+}
 }
