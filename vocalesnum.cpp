@@ -1,7 +1,12 @@
 #include <iostream>
 using namespace std;
 int main(){
-    int numero;
+    int numero, opcion;
+    cout<<"Este programa determinara las vocales de acuerdo a numeros asignados (seleccione 1 o 2)"<<endl;
+    cout<<"1. Iniciar"<<endl;
+    cout<<"2. Salir"<<endl;
+    cin>>opcion;
+    if (opcion==1){
     cout<<"Ingrese un numero del 1 al 5: "<<endl;
     cin>>numero;
     switch (numero){
@@ -25,5 +30,11 @@ int main(){
             break;
     }
     return 0;
+	}else{
+		if (opcion==2){
+			return 0;
+		}else{
+			cout<<"Opcion invalida"<<endl;
+		}
+	}	
 }
-
